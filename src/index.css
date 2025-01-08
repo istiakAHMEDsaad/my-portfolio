@@ -2,13 +2,13 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ---------------------------------------- *\
-* ROOT
-\* ---------------------------------------- */
-html{
-    scroll-behavior: smooth;
-    overflow-y: scroll;
+/* -------------------- *\
+ * Base
+\* -------------------- */
+html {
+  scroll-behavior: smooth;
 }
+
 body{
-    font-family: "Poppins", "serif";
+    @apply bg-zinc-900 text-zinc-50 ;
 }
