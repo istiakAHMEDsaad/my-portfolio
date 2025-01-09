@@ -1,3 +1,8 @@
+/**
+ * @copyright 2025 istiakAHMEDsaad
+ * @license Apache-2.0
+ */
+
 import { useEffect, useRef } from 'react';
 import PropTypes from 'prop-types';
 

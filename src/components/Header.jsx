@@ -1,5 +1,11 @@
+/**
+ * @copyright 2025 istiakAHMEDsaad
+ * @license Apache-2.0
+ */
+
 import { useState } from 'react';
 import Navbar from './Navbar';
+import { Link } from 'react-router-dom';
 
 const Header = () => {
   const [navOpen, setNavOpen] = useState(false);
@@ -9,9 +15,9 @@ const Header = () => {
       <div className='max-w-screen-2xl w-full mx-auto px-4 flex justify-between items-center md:px-6 md:grid md:grid-cols-[1fr,3fr,1fr]'>
         {/* -----------------> Logo <----------------- */}
         <h1>
-          <a href='/' className='logo'>
+          <Link to={"/"} className='logo'>
             <img src='/white.png' width={30} height={30} alt='logo' />
-          </a>
+          </Link>
         </h1>
 
         <div className='relative md:justify-self-center'>
