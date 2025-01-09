@@ -1,0 +1,72 @@
+const skillItem = [
+  {
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
+    label: 'CSS',
+    desc: 'User Interface'
+  },
+  {
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
+    label: 'TailwindCSS',
+    desc: 'User Interface'
+  },
+  {
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
+    label: 'JavaScript',
+    desc: 'Programming Language'
+  },
+  {
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
+    label: 'React',
+    desc: 'JavaScript library'
+  },
+  {
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
+    label: 'Next.js',
+    desc: 'React framework'
+  },
+  {
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg',
+    label: 'NodeJS',
+    desc: 'Web Server'
+  },
+  {
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
+    label: 'ExpressJS',
+    desc: 'Node Framework'
+  },
+  {
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg',
+    label: 'Firebase',
+    desc: 'Authentication'
+  },
+  {
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg',
+    label: 'MongoDB',
+    desc: 'Database'
+  },
+  {
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg',
+    label: 'Bash',
+    desc: 'Scripting'
+  },
+  {
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg',
+    label: 'Linux',
+    desc: 'Operating System'
+  },
+  {
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg',
+    label: 'Docker',
+    desc: 'Debugging'
+  },
+  {
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg',
+    label: 'photoshop',
+    desc: 'Design tool'
+  },
+  {
+    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg',
+    label: 'Figma',
+    desc: 'Design tool'
+  },
+];

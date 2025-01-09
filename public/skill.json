@@ -1,0 +1,86 @@
+[
+  {
+    "id": 1,
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
+    "label": "CSS",
+    "desc": "User Interface"
+  },
+  {
+    "id": 2,
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    "label": "TailwindCSS",
+    "desc": "User Interface"
+  },
+  {
+    "id": 3,
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
+    "label": "JavaScript",
+    "desc": "Programming Language"
+  },
+  {
+    "id": 4,
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
+    "label": "React",
+    "desc": "JavaScript library"
+  },
+  {
+    "id": 5,
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+    "label": "Next.js",
+    "desc": "React framework"
+  },
+  {
+    "id": 6,
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg",
+    "label": "NodeJS",
+    "desc": "Web Server"
+  },
+  {
+    "id": 7,
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+    "label": "ExpressJS",
+    "desc": "Node Framework"
+  },
+  {
+    "id": 8,
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
+    "label": "Firebase",
+    "desc": "Authentication"
+  },
+  {
+    "id": 9,
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
+    "label": "MongoDB",
+    "desc": "Database"
+  },
+  {
+    "id": 10,
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg",
+    "label": "Bash",
+    "desc": "Scripting"
+  },
+  {
+    "id": 11,
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
+    "label": "Linux",
+    "desc": "Operating System"
+  },
+  {
+    "id": 12,
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
+    "label": "Docker",
+    "desc": "Debugging"
+  },
+  {
+    "id": 13,
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg",
+    "label": "photoshop",
+    "desc": "Design tool"
+  },
+  {
+    "id": 14,
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
+    "label": "Figma",
+    "desc": "Design tool"
+  }
+]
