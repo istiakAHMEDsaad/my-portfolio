@@ -1,72 +1,100 @@
-const skillItem = [
-  {
-    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg',
-    label: 'CSS',
-    desc: 'User Interface'
-  },
-  {
-    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg',
-    label: 'TailwindCSS',
-    desc: 'User Interface'
-  },
-  {
-    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg',
-    label: 'JavaScript',
-    desc: 'Programming Language'
-  },
-  {
-    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg',
-    label: 'React',
-    desc: 'JavaScript library'
-  },
-  {
-    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg',
-    label: 'Next.js',
-    desc: 'React framework'
-  },
-  {
-    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original-wordmark.svg',
-    label: 'NodeJS',
-    desc: 'Web Server'
-  },
-  {
-    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg',
-    label: 'ExpressJS',
-    desc: 'Node Framework'
-  },
-  {
-    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg',
-    label: 'Firebase',
-    desc: 'Authentication'
-  },
-  {
-    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg',
-    label: 'MongoDB',
-    desc: 'Database'
-  },
-  {
-    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg',
-    label: 'Bash',
-    desc: 'Scripting'
-  },
-  {
-    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg',
-    label: 'Linux',
-    desc: 'Operating System'
-  },
-  {
-    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg',
-    label: 'Docker',
-    desc: 'Debugging'
-  },
-  {
-    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg',
-    label: 'photoshop',
-    desc: 'Design tool'
-  },
-  {
-    imgSrc: 'https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg',
-    label: 'Figma',
-    desc: 'Design tool'
-  },
-];
+<div
+      className={
+        'relative p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5 transition-colors ' +
+        classes
+      }
+    >
+      {/* --> main div 1 */}
+      <figure className='img-box  rounded-lg mb-4'>
+        {' '}
+        {/* aspect-square */}
+        <img
+          src={imgSrc}
+          loading='lazy'
+          className='img-cover'
+          alt={`${title} ${id}`}
+        />
+      </figure>
+
+      {/* --> main div 2 */}
+      <div className='flex items-center justify-between'>
+        {/* Title & Tags */}
+        <div>
+          <h3 className='title-1 mb-3'>{title}</h3>
+
+          <div className='flex flex-wrap items-center gap-2'>
+            {tags?.map((item, index) => (
+              <span
+                className='h-8 text-sm text-zinc-400 bg-zinc-50/5 grid items-center px-3 rounded-lg'
+                key={index}
+              >
+                {item}
+              </span>
+            ))}
+          </div>
+        </div>
+
+        {/* Material arrow outword */}
+        <Link to={liveLink} target="_blank" className='w-11 h-11 rounded-lg grid place-items-center bg-sky-400 text-zinc-950 shrink-0'>
+          <span className='material-symbols-rounded' aria-hidden='true'>
+            arrow_outward
+          </span>
+        </Link>
+      </div>
+
+      {/* <a href={projectLink} target='_blank' className='absolute inset-0'></a> */}
+    </div>
+
+
+
+
+
+
+
+
+
+<div className="md:max-w-7xl max-w-sm bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden">
+      {/* Image Cover */}
+      <img src={imgSrc} alt={title} className="w-full h-48 object-cover" />
+
+      {/* Content */}
+      <div className="p-5">
+        {/* Title */}
+        <h3 className="text-xl font-semibold text-gray-800">{title}</h3>
+
+        {/* Description */}
+        <p className="text-gray-600 mt-2">{desc}</p>
+
+        {/* Badges */}
+        <div className="flex flex-wrap mt-4 gap-2">
+          {tags?.map((tech, index) => (
+            <span
+              key={index}
+              className="px-3 py-1 text-sm font-medium text-white bg-blue-500 rounded-full"
+            >
+              {tech}
+            </span>
+          ))}
+        </div>
+
+        {/* Links */}
+        <div className="flex justify-between mt-5">
+          <a
+            href={projectLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 bg-gray-800 text-white text-sm font-medium rounded-lg hover:bg-gray-700"
+          >
+            Source Code
+          </a>
+          <a
+            href={liveLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="px-4 py-2 bg-green-500 text-white text-sm font-medium rounded-lg hover:bg-green-400"
+          >
+            Live Demo
+          </a>
+        </div>
+      </div>
+    </div>
