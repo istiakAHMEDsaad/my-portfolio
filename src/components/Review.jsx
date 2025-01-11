@@ -6,6 +6,13 @@
 import { useEffect, useState } from 'react';
 import ReviewCard from './ReviewCard';
 
+// Gsap
+import { gsap } from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+
 function Review() {
   const [reviews, setReviews] = useState();
   useEffect(() => {
@@ -14,12 +21,25 @@ function Review() {
       .then((data) => setReviews(data))
       .catch((err) => console.error(err));
   }, []);
+
+  useGSAP(() => {
+    gsap.to('.scrub-slide', {
+      scrollTrigger: {
+        trigger: '.scrub-slide',
+        start: '-200% 80%',
+        end: '400% 80%',
+        scrub: true
+      },
+      x: '-1000'
+    })
+  });
+
   return (
     <section id='reviews' className='section overflow-hidden'>
       <div className='container'>
         <h2 className='headline-2 mb-8 reveal-up'>What people say</h2>
 
-        <div className='flex items-stretch gap-3 w-fit'>
+        <div className='scrub-slide flex items-stretch gap-3 w-fit'>
           {reviews?.map((review, idx) => (
             <ReviewCard key={idx} review={review}></ReviewCard>
           ))}

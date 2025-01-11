@@ -12,6 +12,7 @@ import Review from '../components/Review';
 import Skill from '../components/Skill';
 import Work from '../components/Work';
 
+// Gsap
 import { ReactLenis } from 'lenis/react';
 import { gsap } from "gsap";
 import { useGSAP } from '@gsap/react';
