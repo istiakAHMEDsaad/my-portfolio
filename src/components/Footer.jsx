@@ -3,10 +3,10 @@
  * @license Apache-2.0
  */
 
-import { ButtonPrimary } from './Button';
 import Aos from 'aos';
 import 'aos/dist/aos.css';
 import { useEffect } from 'react';
+import { ButtonPrimary } from './Button';
 
 const sitemap = [
   {
@@ -55,7 +55,7 @@ const socials = [
 ];
 
 const Footer = () => {
-  useEffect(()=>{
+  useEffect(() => {
     Aos.init();
   }, []);
 
@@ -63,7 +63,7 @@ const Footer = () => {
     <footer className='section'>
       <div className='container'>
         <div className='lg:grid lg:grid-cols-2'>
-          <div className='mb-10' data-aos="fade-up">
+          <div className='mb-10' data-aos='fade-up'>
             <h1 className='headline-1 mb-8 lg:max-w-[90%] reveal-up'>
               Let&apos;s code together today!
             </h1>
@@ -76,7 +76,7 @@ const Footer = () => {
           </div>
 
           <div className='grid grid-cols-2 gap-4 lg:pl-20'>
-            <div data-aos="fade-up">
+            <div data-aos='fade-up'>
               <p className='mb-2'>Sitemap</p>
 
               <ul>
@@ -93,7 +93,7 @@ const Footer = () => {
               </ul>
             </div>
 
-            <div data-aos="fade-up">
+            <div data-aos='fade-up'>
               <p className='mb-2'>Socials</p>
 
               <ul>
