@@ -14,34 +14,36 @@ import Work from '../components/Work';
 
 // Gsap
 import { ReactLenis } from 'lenis/react';
-import { gsap } from "gsap";
+import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
-import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import Cursor from '../components/Cursor';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 function App() {
-  useGSAP(()=>{
+  useGSAP(() => {
     const elements = gsap.utils.toArray('.reveal-up');
 
-    elements.forEach((element)=>{
+    elements.forEach((element) => {
       gsap.to(element, {
         scrollTrigger: {
           trigger: element,
           start: '-200 bottom',
           end: 'bottom 80%',
-          scrub: true
+          scrub: true,
         },
         y: 0,
         opacity: 1,
         duration: 1,
-        ease: 'power2.out'
-      })
-    })
-  })
-  
+        ease: 'power2.out',
+      });
+    });
+  });
+
   return (
     <ReactLenis root>
+      <Cursor />
       <Header />
       <main>
         <Hero />
