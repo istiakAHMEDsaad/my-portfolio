@@ -10,7 +10,11 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@gsap/react": "^2.1.1",
+    "aos": "^2.3.4",
     "dotenv": "^16.4.7",
+    "gsap": "^3.12.5",
+    "lenis": "^1.1.19",
     "localforage": "^1.10.0",
     "match-sorter": "^8.0.0",
     "prop-types": "^15.8.1",

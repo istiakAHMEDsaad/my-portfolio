@@ -4,6 +4,7 @@ import { RouterProvider } from 'react-router-dom';
 import './index.css';
 
 import router from './Routes/router.jsx';
+import 'lenis/dist/lenis.css';
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>

@@ -8,15 +8,19 @@ import { FaGithub } from 'react-icons/fa';
 import { FaArrowUpRightFromSquare } from 'react-icons/fa6';
 import { Link } from 'react-router-dom';
 
+
 function ProjectCard({ project, classes }) {
   const { id, imgSrc, title, tags, projectLink, liveLink, desc } =
     project || {};
+
+  
   return (
     <div
       className={
         'relative p-4 rounded-2xl bg-zinc-800 hover:bg-zinc-700/50 active:bg-zinc-700/60 ring-1 ring-inset ring-zinc-50/5 transition-colors flex flex-col justify-between ' +
         classes
       }
+      data-aos="fade-up"
     >
       {/* --> main div 1 */}
       <figure className='img-box rounded-lg mb-4 basis-[50%]'>
