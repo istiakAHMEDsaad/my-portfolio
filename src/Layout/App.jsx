@@ -17,7 +17,7 @@ import { ReactLenis } from 'lenis/react';
 import { gsap } from 'gsap';
 import { useGSAP } from '@gsap/react';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
-import Cursor from '../components/Cursor';
+// import Cursor from '../components/Cursor';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -43,7 +43,7 @@ function App() {
 
   return (
     <ReactLenis root>
-      <Cursor />
+      {/* <Cursor /> */}
       <Header />
       <main>
         <Hero />

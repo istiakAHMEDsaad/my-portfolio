@@ -41,6 +41,9 @@ const Hero = () => {
             <ButtonPrimary 
             label='Download CV'
             icon="download"
+            href={"https://drive.google.com/uc?export=download&id=1uFWKd5xYthe-7WUCVOrE8zvFolkPuVgL"}
+            target='_blank'
+            rel="noopener noreferrer"
             />
             
             {/* Button outline */}
