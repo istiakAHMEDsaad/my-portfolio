@@ -5,6 +5,7 @@
 
 import { useEffect, useState } from 'react';
 import ReviewCard from './ReviewCard';
+import Marquee from 'react-fast-marquee';
 
 // Gsap
 import { gsap } from 'gsap';
@@ -28,23 +29,25 @@ function Review() {
         trigger: '.scrub-slide',
         start: '-200% 80%',
         end: '400% 80%',
-        scrub: true
+        scrub: true,
       },
-      x: '-1000'
-    })
+      x: '-1000',
+    });
   });
 
   return (
     <section id='reviews' className='section overflow-hidden'>
-      <div className='container'>
-        <h2 className='headline-2 mb-8 reveal-up'>What people say</h2>
-
-        <div className='scrub-slide flex items-stretch gap-3 w-fit'>
-          {reviews?.map((review, idx) => (
-            <ReviewCard key={idx} review={review}></ReviewCard>
-          ))}
+      {/* <Marquee pauseOnHover='ture' autoFill='true'> */}
+        <div className='container'>
+          <h2 className='headline-2 mb-8 reveal-up'>What people say</h2>
+          {/* scrub-slide */}
+          <div className='scrub-slide flex items-stretch gap-3 w-fit'>
+            {reviews?.map((review, idx) => (
+              <ReviewCard key={idx} review={review}></ReviewCard>
+            ))}
+          </div>
         </div>
-      </div>
+      {/* </Marquee> */}
     </section>
   );
 }
