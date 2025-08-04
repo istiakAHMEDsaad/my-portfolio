@@ -4,6 +4,7 @@
  */
 
 import rmvBg from '../assets/rmv-bg.png'
+import smlBg from '../assets/bg_img.jpg'
 import {ButtonPrimary, ButtonOutline} from './Button'
 
 
@@ -17,7 +18,7 @@ const Hero = () => {
         <div>
           <div className="flex items-center gap-3">
             <figure className="img-box w-9 h-9 rounded-lg">
-              <img src="https://scontent.fdac175-1.fna.fbcdn.net/v/t39.30808-6/415494624_2094001837607094_5453205653557107494_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGl0Y6ZDESFRhiSjnFmH3pupCMOfTNfEP6kIw59M18Q_smndNVTd1jGM88g1Oh2-YkOaktFlOp0_54jLv3uYS3G&_nc_ohc=eIwmwA8swHwQ7kNvgEKWLeb&_nc_zt=23&_nc_ht=scontent.fdac175-1.fna&_nc_gid=A_QvbR7yYzRCxftFAbTX10B&oh=00_AYCxjxnTqfTHrWMeurSq5vnx6cxnjgYZr9AG9q6Eoo25PQ&oe=6785B087" 
+              <img src={smlBg}
               width={40} 
               height={40} 
               className="img-cover"
