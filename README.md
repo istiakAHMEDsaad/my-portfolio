@@ -10,7 +10,7 @@ This my personal portfolio, where i share all my valuable information and projec
 
 
 
-[![Static Badge](https://img.shields.io/badge/Live%20Preview-badge?style=social)](https://istiakahmedsaad_portfolio_1.surge.sh/)
+[![Static Badge](https://img.shields.io/badge/Live%20Preview-badge?style=social)](https://my-portfolio-simpleproject.vercel.app/)
 ## Technology
 
 List of latest technology i used this project
