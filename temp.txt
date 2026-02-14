@@ -1,0 +1,137 @@
+{
+    "id": 102,
+    "imgSrc": "https://raw.githubusercontent.com/istiakAHMEDsaad/Barn-House-Design-Landing-Page/main/barn_ss.PNG",
+    "title": "Barn House Landing Page",
+    "tags": ["TailwindCSS", "JavaScript"],
+    "projectLink": "https://github.com/istiakAHMEDsaad/Barn-House-Design-Landing-Page",
+    "liveLink": "https://istiakahmedsaad.github.io/Barn-House-Design-Landing-Page/",
+    "desc": "Simple html, css & javascript project"
+  },
+  {
+    "id": 103,
+    "imgSrc": "https://i.ibb.co.com/z6pjMNH/peddy-pet.png",
+    "title": "Peddy Pet Adoption Platform",
+    "tags": ["JavaScript", "API", "TailwindCSS"],
+    "projectLink": "https://github.com/istiakAHMEDsaad/Peddy_Pet_Adoption_Platform_Global",
+    "liveLink": "https://peddy-pet-adoption-platform-assignment-6-es6.surge.sh/",
+    "desc": "Beautiful JavaScript, Rest API, TailwindCss Project"
+  },
+  {
+    "id": 104,
+    "imgSrc": "https://raw.githubusercontent.com/istiakAHMEDsaad/bpl-dream-eleven-react-project/main/src/assets/ss.png",
+    "title": "BPL Dream Eleven",
+    "tags": ["React", "API", "TailwindCSS"],
+    "projectLink": "https://github.com/istiakAHMEDsaad/bpl-dream-eleven-react-project",
+    "liveLink": "https://bpl-super-six-dream-eleven.surge.sh/",
+    "desc": "You like BPL 😉, Simple React with rest api project"
+  },
+  {
+    "id": 105,
+    "imgSrc": "https://raw.githubusercontent.com/istiakAHMEDsaad/bookish-poka/main/src/assets/ss.png",
+    "title": "Bookish Poka",
+    "tags": ["React", "API", "TailwindCSS", "Rechart"],
+    "projectLink": "https://github.com/istiakAHMEDsaad/bookish-poka",
+    "liveLink": "https://bookish_poka_react_simple_project.surge.sh/",
+    "desc": "Favorite book shop with react and rest api project"
+  },
+  {
+    "id": 106,
+    "imgSrc": "https://raw.githubusercontent.com/istiakAHMEDsaad/gadget-heaven/main/gadget.PNG",
+    "title": "Gadget Heaven",
+    "tags": ["React", "Firebase", "API", "TailwindCSS"],
+    "projectLink": "https://github.com/istiakAHMEDsaad/gadget-heaven",
+    "liveLink": "https://gadget_heaven_simple_react_assignment.surge.sh/",
+    "desc": "Finest gadget project with react, firebase & rest api"
+  },
+  {
+    "id": 107,
+    "imgSrc": "https://raw.githubusercontent.com/istiakAHMEDsaad/Digital-Coupon-Collection-App/main/coupon.PNG",
+    "title": "Digital Coupon Collection",
+    "tags": ["React", "Firebase", "API", "TailwindCSS"],
+    "projectLink": "https://github.com/istiakAHMEDsaad/Digital-Coupon-Collection-App",
+    "liveLink": "https://digital-coupon-collection-app.web.app/",
+    "desc": "In our system people can find their desire coupone 😉"
+  },
+  {
+    "id": 108,
+    "imgSrc": "https://raw.githubusercontent.com/istiakAHMEDsaad/Espresso-Emporium-MongoDB/main/coffee.PNG",
+    "title": "Espresso Emporium",
+    "tags": ["React", "Express", "MongoDB", "Firebase", "TailwindCSS"],
+    "projectLink": "https://github.com/istiakAHMEDsaad/Espresso-Emporium-MongoDB",
+    "liveLink": "https://espresso-emporium-crud-754df.web.app/",
+    "desc": "Sweet coffee shop ☕, Find your favorite coffee here."
+  },
+  {
+    "id": 109,
+    "imgSrc": "https://raw.githubusercontent.com/istiakAHMEDsaad/Chill-Gamer/main/chill_Gamer.PNG",
+    "title": "Chill Gamer",
+    "tags": ["React", "Express", "MongoDB", "Firebase", "TailwindCSS"],
+    "projectLink": "https://github.com/istiakAHMEDsaad/Chill-Gamer",
+    "liveLink": "https://assignment-10-firebase-mongodb.web.app/",
+    "desc": "If a perfect place would exist where you can find every latest game news."
+  }
+
+
+
+
+
+
+
+
+
+
+  /**
+ * @copyright 2025 istiakAHMEDsaad
+ * @license Apache-2.0
+ */
+
+import { useEffect, useState } from 'react';
+import ReviewCard from './ReviewCard';
+import Marquee from 'react-fast-marquee';
+
+// Gsap
+import { gsap } from 'gsap';
+import { useGSAP } from '@gsap/react';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(useGSAP, ScrollTrigger);
+
+function Review() {
+  const [reviews, setReviews] = useState();
+  useEffect(() => {
+    fetch('/review.json')
+      .then((res) => res.json())
+      .then((data) => setReviews(data))
+      .catch((err) => console.error(err));
+  }, []);
+
+  useGSAP(() => {
+    gsap.to('.scrub-slide', {
+      scrollTrigger: {
+        trigger: '.scrub-slide',
+        start: '-200% 80%',
+        end: '400% 80%',
+        scrub: true,
+      },
+      x: '-1000',
+    });
+  });
+
+  return (
+    <section id='reviews' className='section overflow-hidden'>
+      {/* <Marquee pauseOnHover='ture' autoFill='true'> */}
+        <div className='container'>
+          <h2 className='headline-2 mb-8 reveal-up'>What people say</h2>
+          {/* scrub-slide */}
+          <div className='scrub-slide flex items-stretch gap-3 w-fit'>
+            {reviews?.map((review, idx) => (
+              <ReviewCard key={idx} review={review}></ReviewCard>
+            ))}
+          </div>
+        </div>
+      {/* </Marquee> */}
+    </section>
+  );
+}
+
+export default Review;

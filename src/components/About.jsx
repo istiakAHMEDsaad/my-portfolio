@@ -11,22 +11,24 @@ function About() {
     },
     {
       label: 'Years of experience',
-      number: 1,
+      number: 2,
     },
   ];
 
   return (
     <section id='about' className='section'>
       <div className='container'>
-
         <div className='bg-zinc-800/50 p-7 rounded-2xl md:p-12 reveal-up'>
           <p className='text-zinc-300 mb-4 md:mb-8 md:text-xl md:max-w-[60ch] xl:max-w-full'>
-            I&apos;m a MERN stack developer with a focus on building robust and
-            scalable web applications. I have a strong foundation in JavaScript,
-            React, and Node.js, and I&apos;m proficient in using MongoDB for
-            data management. I&apos;m passionate about clean code, best
-            practices, and creating user-friendly interfaces. I&apos;m eager to
-            contribute my skills to a challenging and rewarding role.
+            Full-Stack Developer with nearly 2 years of hands-on experience
+            building scalable web applications using the MERN stack. A fast
+            learner who quickly adapts to new technologies and enjoys exploring
+            emerging tools and frameworks. Passionate about Artificial
+            Intelligence and currently engaged in research work, with a strong
+            interest in academic papers and innovative problem-solving.
+            Recognized for effective communication, teamwork, and leadership
+            skills developed through collaborative projects and competitive
+            programming
           </p>
 
           <div className='flex flex-wrap items-center gap-4 md:gap-7'>

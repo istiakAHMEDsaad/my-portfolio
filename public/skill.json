@@ -1,15 +1,15 @@
 [
   {
     "id": 1,
-    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg",
-    "label": "CSS",
-    "desc": "User Interface"
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
+    "label": "TailwindCSS",
+    "desc": "Css Framework"
   },
   {
     "id": 2,
-    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
-    "label": "TailwindCSS",
-    "desc": "User Interface"
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg",
+    "label": "Framer Motion",
+    "desc": "Motion Library"
   },
   {
     "id": 3,
@@ -31,54 +31,84 @@
   },
   {
     "id": 6,
-    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg",
-    "label": "NodeJS",
-    "desc": "Web Server"
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
+    "label": "Redux",
+    "desc": "State Management"
   },
   {
     "id": 7,
-    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
-    "label": "ExpressJS",
-    "desc": "Node Framework"
-  },
-  {
-    "id": 8,
     "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/firebase/firebase-original.svg",
     "label": "Firebase",
     "desc": "Authentication"
   },
   {
+    "id": 8,
+    "imgSrc": "https://assets.streamlinehq.com/image/private/w_300,h_300,ar_1/f_auto/v1/icons/logos/clerk-uvna1mxd54k50cohb8o2i.png/clerk-nzr7956knokwjx841f6yye.png?_a=DATAiZAAZAA0",
+    "label": "Clerk",
+    "desc": "Authentication"
+  },
+  {
     "id": 9,
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-plain-wordmark.svg",
+    "label": "NodeJS",
+    "desc": "Web Server"
+  },
+  {
+    "id": 10,
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/express/express-original.svg",
+    "label": "ExpressJS",
+    "desc": "Node Framework"
+  },
+  {
+    "id": 11,
     "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongodb/mongodb-original-wordmark.svg",
     "label": "MongoDB",
     "desc": "Database"
   },
   {
-    "id": 10,
+    "id": 12,
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mongoose/mongoose-original.svg",
+    "label": "MongooseJs",
+    "desc": "Object Data Modeling"
+  },
+  {
+    "id": 13,
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-original.svg",
+    "label": "Postman",
+    "desc": "Monitoring APIs"
+  },
+  {
+    "id": 14,
     "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/bash/bash-original.svg",
     "label": "Bash",
     "desc": "Scripting"
   },
   {
-    "id": 11,
+    "id": 15,
     "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-original.svg",
     "label": "Linux",
     "desc": "Operating System"
   },
   {
-    "id": 12,
+    "id": 16,
     "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/docker/docker-original.svg",
     "label": "Docker",
     "desc": "Debugging"
   },
   {
-    "id": 13,
+    "id": 17,
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg",
+    "label": "Python",
+    "desc": "Programming Language"
+  },
+  {
+    "id": 18,
     "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg",
     "label": "photoshop",
     "desc": "Design tool"
   },
   {
-    "id": 14,
+    "id": 19,
     "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
     "label": "Figma",
     "desc": "Design tool"

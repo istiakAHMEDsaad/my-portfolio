@@ -1,81 +1,80 @@
 [
   {
-    "id": 1,
-    "imgSrc": "https://camo.githubusercontent.com/e795f427e1a1aa70082ba6de061883316b6919955873e113649e8a117c898590/68747470733a2f2f692e706f7374696d672e63632f4e6657465a4d34332f7465612e706e67",
-    "title": "Tea House Landing Page",
-    "tags": ["TailwindCSS", "JavaScript"],
-    "projectLink": "https://github.com/istiakAHMEDsaad/Tea-House-Landing-Page",
-    "liveLink": "https://istiakahmedsaad.github.io/Tea-House-Landing-Page/",
-    "desc": "Simple html, css & javascript project"
+    "id": 101,
+    "imgSrc": "https://raw.githubusercontent.com/istiakAHMEDsaad/job-portal-sdp-4/refs/heads/main/screenshot.PNG",
+    "title": "Bubt Job Portal",
+    "tags": ["React", "Clerk", "Express", "MongooseJs", "Cloudinary", "Sentry"],
+    "projectLink": "https://github.com/istiakAHMEDsaad/job-portal-sdp-4",
+    "liveLink": "https://job-portal-sdp-4-client.vercel.app/",
+    "desc": "Full Stack job portal built with the MERN stack"
   },
   {
-    "id": 2,
-    "imgSrc": "https://raw.githubusercontent.com/istiakAHMEDsaad/Barn-House-Design-Landing-Page/main/barn_ss.PNG",
-    "title": "Barn House Landing Page",
-    "tags": ["TailwindCSS", "JavaScript"],
-    "projectLink": "https://github.com/istiakAHMEDsaad/Barn-House-Design-Landing-Page",
-    "liveLink": "https://istiakahmedsaad.github.io/Barn-House-Design-Landing-Page/",
-    "desc": "Simple html, css & javascript project"
+    "id": 102,
+    "imgSrc": "https://raw.githubusercontent.com/istiakAHMEDsaad/product_store_app_pern/refs/heads/main/productify.png",
+    "title": "Productify",
+    "tags": [
+      "React",
+      "Clerk",
+      "React Query",
+      "Express",
+      "PostgreSQL",
+      "Drizzle",
+      "TypeScript"
+    ],
+    "projectLink": "https://github.com/istiakAHMEDsaad/product_store_app_pern",
+    "liveLink": "https://product-store-app-frontend.onrender.com/",
+    "desc": "Full Stack product management application built using the PERN stack"
   },
   {
-    "id": 3,
-    "imgSrc": "https://i.ibb.co.com/z6pjMNH/peddy-pet.png",
-    "title": "Peddy Pet Adoption Platform",
-    "tags": ["JavaScript", "API", "TailwindCSS"],
-    "projectLink": "https://github.com/istiakAHMEDsaad/Peddy_Pet_Adoption_Platform_Global",
-    "liveLink": "https://peddy-pet-adoption-platform-assignment-6-es6.surge.sh/",
-    "desc": "Beautiful JavaScript, Rest API, TailwindCss Project"
+    "id": 103,
+    "imgSrc": "/project-ss/screenshot-superpoke.jpg",
+    "title": "SuperPoke",
+    "tags": [
+      "NextJs",
+      "React Query",
+      "TypeScript",
+      "Framer Motion",
+      "Next Auth",
+      "MongooseJs"
+    ],
+    "projectLink": "https://github.com/istiakAHMEDsaad/superpoke-v1",
+    "liveLink": "https://superpoke-v1.vercel.app/",
+    "desc": "Modern full-stack web application"
   },
   {
-    "id": 4,
-    "imgSrc": "https://raw.githubusercontent.com/istiakAHMEDsaad/bpl-dream-eleven-react-project/main/src/assets/ss.png",
-    "title": "BPL Dream Eleven",
-    "tags": ["React", "API", "TailwindCSS"],
-    "projectLink": "https://github.com/istiakAHMEDsaad/bpl-dream-eleven-react-project",
-    "liveLink": "https://bpl-super-six-dream-eleven.surge.sh/",
-    "desc": "You like BPL 😉, Simple React with rest api project"
+    "id": 104,
+    "imgSrc": "/project-ss/screenshot-ninecart.jpg",
+    "title": "NineCart",
+    "tags": [
+      "NextJs",
+      "Redux",
+      "Clerk",
+      "Imagekit",
+      "Inngest",
+      "OpenAI",
+      "Stripe",
+      "WebSocket",
+      "Prisma",
+      "NeonDB"
+    ],
+    "projectLink": "https://github.com/istiakAHMEDsaad/superpoke-v1",
+    "liveLink": "https://superpoke-v1.vercel.app/",
+    "desc": "Multi vendor E-commerce application"
   },
   {
-    "id": 5,
-    "imgSrc": "https://raw.githubusercontent.com/istiakAHMEDsaad/bookish-poka/main/src/assets/ss.png",
-    "title": "Bookish Poka",
-    "tags": ["React", "API", "TailwindCSS", "Rechart"],
-    "projectLink": "https://github.com/istiakAHMEDsaad/bookish-poka",
-    "liveLink": "https://bookish_poka_react_simple_project.surge.sh/",
-    "desc": "Favorite book shop with react and rest api project"
+    "id": 105,
+    "imgSrc": "https://raw.githubusercontent.com/istiakAHMEDsaad/next-lamamia/main/lamamia-screenshot.webp",
+    "title": "Lamamia",
+    "tags": ["NextJs", "Next Auth", "SWR", "Next Auth", "MongooseJs"],
+    "projectLink": "https://github.com/istiakAHMEDsaad/next-lamamia",
+    "liveLink": "https://next-lamamia.vercel.app/",
+    "desc": "Nextjs server side render with crud operation"
   },
   {
-    "id": 6,
-    "imgSrc": "https://raw.githubusercontent.com/istiakAHMEDsaad/gadget-heaven/main/gadget.PNG",
-    "title": "Gadget Heaven",
-    "tags": ["React", "Firebase", "API", "TailwindCSS"],
-    "projectLink": "https://github.com/istiakAHMEDsaad/gadget-heaven",
-    "liveLink": "https://gadget_heaven_simple_react_assignment.surge.sh/",
-    "desc": "Finest gadget project with react, firebase & rest api"
-  },
-  {
-    "id": 7,
-    "imgSrc": "https://raw.githubusercontent.com/istiakAHMEDsaad/Digital-Coupon-Collection-App/main/coupon.PNG",
-    "title": "Digital Coupon Collection",
-    "tags": ["React", "Firebase", "API", "TailwindCSS"],
-    "projectLink": "https://github.com/istiakAHMEDsaad/Digital-Coupon-Collection-App",
-    "liveLink": "https://digital-coupon-collection-app.web.app/",
-    "desc": "In our system people can find their desire coupone 😉"
-  },
-  {
-    "id": 8,
-    "imgSrc": "https://raw.githubusercontent.com/istiakAHMEDsaad/Espresso-Emporium-MongoDB/main/coffee.PNG",
-    "title": "Espresso Emporium",
-    "tags": ["React", "Express", "MongoDB", "Firebase", "TailwindCSS"],
-    "projectLink": "https://github.com/istiakAHMEDsaad/Espresso-Emporium-MongoDB",
-    "liveLink": "https://espresso-emporium-crud-754df.web.app/",
-    "desc": "Sweet coffee shop ☕, Find your favorite coffee here."
-  },
-  {
-    "id": 9,
+    "id": 106,
     "imgSrc": "https://raw.githubusercontent.com/istiakAHMEDsaad/Chill-Gamer/main/chill_Gamer.PNG",
     "title": "Chill Gamer",
-    "tags": ["React", "Express", "MongoDB", "Firebase", "TailwindCSS"],
+    "tags": ["React", "Firebase", "Express", "MongoDB"],
     "projectLink": "https://github.com/istiakAHMEDsaad/Chill-Gamer",
     "liveLink": "https://assignment-10-firebase-mongodb.web.app/",
     "desc": "If a perfect place would exist where you can find every latest game news."

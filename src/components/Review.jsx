@@ -3,9 +3,8 @@
  * @license Apache-2.0
  */
 
-import { useEffect, useState } from 'react';
+import { useEffect, useState, useRef } from 'react';
 import ReviewCard from './ReviewCard';
-import Marquee from 'react-fast-marquee';
 
 // Gsap
 import { gsap } from 'gsap';
@@ -16,6 +15,8 @@ gsap.registerPlugin(useGSAP, ScrollTrigger);
 
 function Review() {
   const [reviews, setReviews] = useState();
+  const sliderRef = useRef(null);
+
   useEffect(() => {
     fetch('/review.json')
       .then((res) => res.json())
@@ -23,30 +24,43 @@ function Review() {
       .catch((err) => console.error(err));
   }, []);
 
-  useGSAP(() => {
-    gsap.to('.scrub-slide', {
+  useEffect(() => {
+    if (!reviews?.length) return;
+
+    const el = sliderRef.current;
+
+    const totalWidth = el.scrollWidth - window.innerWidth;
+
+    gsap.to(el, {
+      x: -totalWidth,
+      ease: 'none',
       scrollTrigger: {
-        trigger: '.scrub-slide',
-        start: '-200% 80%',
-        end: '400% 80%',
+        trigger: el,
+        start: 'top 80%',
+        end: `+=${totalWidth}`,
         scrub: true,
+        invalidateOnRefresh: true,
       },
-      x: '-1000',
     });
-  });
+
+    ScrollTrigger.refresh();
+  }, [reviews]);
 
   return (
     <section id='reviews' className='section overflow-hidden'>
-      {/* <Marquee pauseOnHover='ture' autoFill='true'> */}
-        <div className='container'>
-          <h2 className='headline-2 mb-8 reveal-up'>What people say</h2>
-          {/* scrub-slide */}
-          <div className='scrub-slide flex items-stretch gap-3 w-fit'>
-            {reviews?.map((review, idx) => (
-              <ReviewCard key={idx} review={review}></ReviewCard>
-            ))}
-          </div>
+      <div className='container'>
+        <h2 className='headline-2 mb-8 reveal-up'>What people say</h2>
+
+        {/* scrub-slide */}
+        <div
+          ref={sliderRef}
+          className='scrub-slide flex items-stretch gap-3 w-fit'
+        >
+          {reviews?.map((review, idx) => (
+            <ReviewCard key={idx} review={review}></ReviewCard>
+          ))}
         </div>
+      </div>
       {/* </Marquee> */}
     </section>
   );

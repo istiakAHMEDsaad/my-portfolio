@@ -18,9 +18,9 @@ function Work() {
       .catch((err) => console.error(err));
   }, []);
 
-  useEffect(()=>{
+  useEffect(() => {
     Aos.init();
-  }, [])
+  }, []);
 
   return (
     <section id='work' className='section'>
@@ -28,7 +28,10 @@ function Work() {
         <h2 className='headline-2 mb-8 reveal-up'>My project highlight</h2>
 
         {/* Card gap-x-4 gap-y-5 grid-cols-[repeat(auto-fill,_minmax(280px,_1fr))] */}
-        <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2' data-aos="fade-up">
+        <div
+          className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2'
+          data-aos='fade-up'
+        >
           {projects?.map((project, idx) => (
             <ProjectCard key={idx} project={project}></ProjectCard>
           ))}
