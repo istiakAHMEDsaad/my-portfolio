@@ -7,33 +7,33 @@
   },
   {
     "id": 2,
-    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/framermotion/framermotion-original.svg",
-    "label": "Framer Motion",
-    "desc": "Motion Library"
-  },
-  {
-    "id": 3,
     "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg",
     "label": "JavaScript",
     "desc": "Programming Language"
   },
   {
+    "id": 3,
+    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
+    "label": "Redux",
+    "desc": "State Management"
+  },
+  {
     "id": 4,
+    "imgSrc": "https://svgl.app/library/tanstack.svg",
+    "label": "Tanstack Query",
+    "desc": "Remote State Management"
+  },
+  {
+    "id": 5,
     "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg",
     "label": "React",
     "desc": "JavaScript library"
   },
   {
-    "id": 5,
+    "id": 6,
     "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
     "label": "Next.js",
     "desc": "React framework"
-  },
-  {
-    "id": 6,
-    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/redux/redux-original.svg",
-    "label": "Redux",
-    "desc": "State Management"
   },
   {
     "id": 7,
@@ -103,14 +103,20 @@
   },
   {
     "id": 18,
-    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/photoshop/photoshop-original.svg",
-    "label": "photoshop",
-    "desc": "Design tool"
+    "imgSrc": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/ollama.svg",
+    "label": "Ollama",
+    "desc": "Local LLM"
   },
   {
     "id": 19,
-    "imgSrc": "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/figma/figma-original.svg",
-    "label": "Figma",
-    "desc": "Design tool"
+    "imgSrc": "https://cdn.jsdelivr.net/gh/openclaw/openclaw@main/ui/public/favicon.svg",
+    "label": "n8n",
+    "desc": "AI agent platform"
+  },
+  {
+    "id": 20,
+    "imgSrc": "https://cdn.jsdelivr.net/npm/simple-icons@latest/icons/n8n.svg",
+    "label": "n8n",
+    "desc": "Automation Workflow"
   }
 ]
